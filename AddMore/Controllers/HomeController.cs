@@ -6,27 +6,23 @@ namespace AddMore.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        public ActionResult MainView()
         {
-            _logger = logger;
+            return View(); //this is main page.We will display  "_AddMorePartialView" partial page on this main page
         }
-
-        public IActionResult Index()
+        public ActionResult AddMorePartialView()
         {
+            //this  action page is support cal the partial page.
+            //We will call this action by view page.This Action is return partial page
+            AddMoreViewModel model = new AddMoreViewModel();
+            return PartialView("_AddMorePartialView", model);
+            //^this is actual partical page we have 
+            //create on this page in Home Controller as given below image
+        }
+        public ActionResult PostAddMore(AddMoreViewModel model)
+        {
+            //Here,Post addmore value from view page and get multiple values from view page
             return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }
