@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "KY95Is3PM9aGNMTRzdA7HNLtHo0vcgWgTSBiPW8hZpSLKxL7I+TP/d9PB8n1e+LiCWO224/5ltciArLCjQXv3A==",
+  "dgSpecHash": "0VgHea2X+UpQzc7tYU3Ca8gNx9L38lFJsVdSAPdGnDeKgPQpx/cgR196HRTwPkII3yvrB5bvqgmBkr3r6FcP3g==",
   "success": true,
   "projectFilePath": "C:\\Users\\Blade\\source\\repos\\AddMore\\AddMore\\AddMore.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Blade\\.nuget\\packages\\dropzone\\4.3.0\\dropzone.4.3.0.nupkg.sha512"
+  ],
   "logs": []
 }

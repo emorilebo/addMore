@@ -7,18 +7,26 @@
     //BeginCollectionItemCore already created in HtmlHelper.cs class
 }
 
+< script src = "~/Scripts/dropzone/dropzone.min.js" >< /script>< script src = "~/Scripts/bootstrap.min.js" >< /script>< link href = "~/Scripts/dropzone/dropzone.min.css" rel = "stylesheet" / >
+
 @using (Html.BeginCollectionItem("AddMoreList"))
 {
     <!-------"AddMoreList"----- this is AddMoreViewModel List Object wich is define ViewModel file -->
     <div id="removeAddMoreDiv" class="col-xs-12 col-sm-12 form-group">
         <div class="row">
-            <div class="col-md-4">
-                <input asp-for="FirstName" placeholder="First Name" class="form-control" />
+            <div class="col-md-2">
+                <input asp-for="FirstDoc" placeholder="Select Document" class="form-control" />
             </div>
-            <div class="col-md-4">
-                <input asp-for="LastName" placeholder="First Name" class="form-control" />
+            <div class="col-md-2">
+                <input asp-for="SecondDoc" placeholder="Select Document" class="form-control" />
             </div>
-            <div class="col-md-4">
+             
+            <div id="dZUpload" class="meme dropzone col-md-3 ">
+                <div asp-for="File class="dz-default dz-message">
+                    Drop file here. 
+                </div>
+            </div>
+            <div class="col-md-2">
                 <button type="button" class="btn btn-danger btn-sm removeDiv">
                     Remove
                 </button>

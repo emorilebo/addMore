@@ -2172,6 +2172,12 @@ progress {
   color: #6c757d;
 }
 
+.meme {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
 .form-control {
   display: block;
   width: 100%;
